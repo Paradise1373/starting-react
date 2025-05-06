@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "english": "Blubasaur",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 2,
+    "name": {
+      "english": "Ivysaur",
+      "french": "Herbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 3,
+    "name": {
+      "english": "Venusaur",
+      "french": "Florizarre"
+    },
+    "type": ["Grass"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 4,
+    "name": {
+      "english": "Blubasaur",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 5,
+    "name": {
+      "english": "Numbasaur",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 6,
+    "name": {
+      "english": "Marshmalo",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 7,
+    "name": {
+      "english": "Ivysaur",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 8,
+    "name": {
+      "english": "Blubasaur",
+      "french": "Bulbizarre"
+    },
+    "type": ["Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 9,
+    "name": {
+      "english": "Marshmalo",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 10,
+    "name": {
+      "english": "Potato",
+      "french": "Bulbizarre"
+    },
+    "type": ["Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 11,
+    "name": {
+      "english": "Ivysaur",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 12,
+    "name": {
+      "english": "Blubasaur",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 13,
+    "name": {
+      "english": "Blubasaur",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 14,
+    "name": {
+      "english": "Blubasaur",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 15,
+    "name": {
+      "english": "Potato",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 16,
+    "name": {
+      "english": "Ivysaur",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 17,
+    "name": {
+      "english": "Marshmalo",
+      "french": "Bulbizarre"
+    },
+    "type": ["Grass", "Poison"],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp.Attack": 65,
+      "Sp.Defense": 65,
+      "Speed": 45
+    }
+  }
+]
