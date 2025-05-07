@@ -37,7 +37,7 @@
       "english": "Venusaur",
       "french": "Florizarre"
     },
-    "type": ["Grass"],
+    "type": ["Grass", "Poison"],
     "base": {
       "HP": 45,
       "Attack": 49,
@@ -50,10 +50,10 @@
   {
     "id": 4,
     "name": {
-      "english": "Blubasaur",
+      "english": "Charmander",
       "french": "Bulbizarre"
     },
-    "type": ["Grass", "Poison"],
+    "type": ["Fire"],
     "base": {
       "HP": 45,
       "Attack": 49,
@@ -69,7 +69,7 @@
       "english": "Numbasaur",
       "french": "Bulbizarre"
     },
-    "type": ["Grass"],
+    "type": ["Fire"],
     "base": {
       "HP": 45,
       "Attack": 49,
@@ -98,10 +98,10 @@
   {
     "id": 7,
     "name": {
-      "english": "Ivysaur",
+      "english": "Charizard",
       "french": "Bulbizarre"
     },
-    "type": ["Grass", "Poison"],
+    "type": ["Fire", "Flying"],
     "base": {
       "HP": 45,
       "Attack": 49,
@@ -130,10 +130,10 @@
   {
     "id": 9,
     "name": {
-      "english": "Marshmalo",
+      "english": "Squirtle",
       "french": "Bulbizarre"
     },
-    "type": ["Grass", "Poison"],
+    "type": ["Water"],
     "base": {
       "HP": 45,
       "Attack": 49,
@@ -149,7 +149,7 @@
       "english": "Potato",
       "french": "Bulbizarre"
     },
-    "type": ["Poison"],
+    "type": ["Water"],
     "base": {
       "HP": 45,
       "Attack": 49,
@@ -165,7 +165,7 @@
       "english": "Ivysaur",
       "french": "Bulbizarre"
     },
-    "type": ["Grass", "Poison"],
+    "type": ["Bug"],
     "base": {
       "HP": 45,
       "Attack": 49,
@@ -178,10 +178,10 @@
   {
     "id": 12,
     "name": {
-      "english": "Blubasaur",
+      "english": "Charmeleon",
       "french": "Bulbizarre"
     },
-    "type": ["Grass", "Poison"],
+    "type": ["Bug", "Flying"],
     "base": {
       "HP": 45,
       "Attack": 49,
@@ -194,7 +194,7 @@
   {
     "id": 13,
     "name": {
-      "english": "Blubasaur",
+      "english": "Pidgey",
       "french": "Bulbizarre"
     },
     "type": ["Grass"],
@@ -213,7 +213,7 @@
       "english": "Blubasaur",
       "french": "Bulbizarre"
     },
-    "type": ["Grass", "Poison"],
+    "type": ["Normal"],
     "base": {
       "HP": 45,
       "Attack": 49,
@@ -229,7 +229,7 @@
       "english": "Potato",
       "french": "Bulbizarre"
     },
-    "type": ["Grass", "Poison"],
+    "type": ["Bug", "Poison"],
     "base": {
       "HP": 45,
       "Attack": 49,
@@ -245,7 +245,7 @@
       "english": "Ivysaur",
       "french": "Bulbizarre"
     },
-    "type": ["Grass", "Poison"],
+    "type": ["Normal", "Poison"],
     "base": {
       "HP": 45,
       "Attack": 49,
@@ -261,7 +261,7 @@
       "english": "Marshmalo",
       "french": "Bulbizarre"
     },
-    "type": ["Grass", "Poison"],
+    "type": ["Grass", "Water"],
     "base": {
       "HP": 45,
       "Attack": 49,

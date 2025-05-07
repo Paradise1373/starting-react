@@ -1,6 +1,16 @@
-import pokemon from './Pokemon.json'
+import React from 'react'
+import pokemon from './pokemon.json'
 
 import './App.css'
+
+const PokemonRow = ({ pokemon }) => {
+  return (
+    <tr>
+      <td>{pokemon.name.english}</td>
+      <td>{pokemon.type.join(', ')}</td>
+    </tr>
+  )
+}
 
 const App = () => {
   return (
@@ -20,11 +30,8 @@ const App = () => {
           </tr>
         </thead>
         <tbody>
-          {pokemon.map((pokemon) => {
-            ;<tr>
-              <td>{pokemon.name.english}</td>
-              <td>{pokemon.type.join(', ')}</td>
-            </tr>
+          {pokemon.slice(0, 17).map((pokemon) => {
+            return <PokemonRow key={pokemon.id} pokemon={pokemon} />
           })}
         </tbody>
       </table>
