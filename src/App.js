@@ -1,85 +1,23 @@
 import { useState, useEffect } from 'react'
 import styled from '@emotion/styled/macro'
-import PropTypes from 'prop-types'
-import { Button } from '@mui/material'
+import { CssBaseline } from '@mui/material'
+
+import PokemonContext from './PokemonContext'
+import PokemonInfo from './components/PokemonInfo'
+import PokemonFilter from './components/PokemonFilter'
+import PokemonTable from './components/PokemonTable'
 
 import './App.css'
 
-const PokemonRow = ({ pokemon, onSelect }) => {
-  return (
-    <tr>
-      <td>{pokemon.name.english}</td>
-      <td>{pokemon.type.join(', ')}</td>
-      <td>
-        <Button
-          variant='contained'
-          color='primary'
-          onClick={() => onSelect(pokemon)}
-        >
-          Select!
-        </Button>
-      </td>
-    </tr>
-  )
-}
-
-PokemonRow.propType = {
-  pokemon: PropTypes.shape({
-    name: PropTypes.shape({
-      english: PropTypes.string.isRequired,
-    }),
-    type: PropTypes.arrayOf(PropTypes.string.isRequired),
-  }),
-  onSelect: PropTypes.func.isRequired,
-}
-
-const PokemonInfo = ({ name, base }) => {
-  return (
-    <div>
-      <h1>{name.english}</h1>
-      <table>
-        {Object.keys(base).map((key) => {
-          return (
-            <tr key={key}>
-              <td>{key}</td>
-              <td>{base[key]}</td>
-            </tr>
-          )
-        })}
-      </table>
-    </div>
-  )
-}
-
-PokemonInfo.prototype = {
-  name: PropTypes.shape({
-    english: PropTypes.string.isRequired,
-  }),
-  base: PropTypes.shape({
-    HP: PropTypes.number.isRequired,
-    Attack: PropTypes.number.isRequired,
-    Defense: PropTypes.number.isRequired,
-    'SP. Attack': PropTypes.number.isRequired,
-    'SP. Defense': PropTypes.number.isRequired,
-    Speed: PropTypes.number.isRequired,
-  }),
-}
-
 const Title = styled.h1`
   text-align: center;
-`
-const Input = styled.input`
-  width: 100%;
-  font-size: x-large;
-  padding: 0.2rem;
-  margin-bottom: 0.5rem;
 `
 const TwoColumnLayout = styled.div`
   display: grid;
   grid-template-columns: 70% 30%;
   grid-column-gap: 1rem;
 `
-const Container = styled.div`
+const PageContainer = styled.div`
   margin: auto;
   width: 800px;
   padding-top: 1rem;
@@ -87,8 +25,8 @@ const Container = styled.div`
 
 const App = () => {
   const [filter, setFilter] = useState('')
-  const [selectedItem, setSelectedItem] = useState(null)
-  const [pokemon, setPokemon] = useState([])
+  const [selectedPokemon, setSelectedPokemon] = useState(null)
+  const [pokemon, setPokemon] = useState(null)
 
   useEffect(() => {
     fetch('http://localhost:3000/starting-react/pokemon.json')
@@ -96,40 +34,33 @@ const App = () => {
       .then((data) => setPokemon(data))
   }, [])
 
+  if (!pokemon) {
+    return <div>Loading Data</div>
+  }
+
   return (
-    <Container>
-      <Title>Pokemon Search</Title>
-      <Input value={filter} onChange={(e) => setFilter(e.target.value)} />
-      <TwoColumnLayout>
-        <table width='100%'>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-            </tr>
-          </thead>
-          <tbody>
-            {pokemon
-              .filter((pokemon) =>
-                pokemon.name.english
-                  .toLocaleLowerCase()
-                  .includes(filter.toLocaleLowerCase())
-              )
-              .slice(0, 17)
-              .map((pokemon) => {
-                return (
-                  <PokemonRow
-                    key={pokemon.id}
-                    pokemon={pokemon}
-                    onSelect={(pokemon) => setSelectedItem(pokemon)}
-                  />
-                )
-              })}
-          </tbody>
-        </table>
-        <div>{selectedItem && <PokemonInfo {...selectedItem} />}</div>
-      </TwoColumnLayout>
-    </Container>
+    <PokemonContext.Provider
+      value={{
+        filter,
+        setFilter,
+        selectedPokemon,
+        setSelectedPokemon,
+        pokemon,
+        setPokemon,
+      }}
+    >
+      <PageContainer>
+        <CssBaseline />
+        <Title>Pokemon Search</Title>
+        <TwoColumnLayout>
+          <div>
+            <PokemonFilter />
+            <PokemonTable />
+          </div>
+          <PokemonInfo />
+        </TwoColumnLayout>
+      </PageContainer>
+    </PokemonContext.Provider>
   )
 }
 
